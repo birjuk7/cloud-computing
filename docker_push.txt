@@ -1,0 +1,11 @@
+#Commands to pull docker image and to push the same in docker hub
+docker pull tomcat
+docker images
+docker run -it -d tomcat
+docker ps -q
+ docker exec -it 70105585d1cf bash
+ docker ps -a
+docker commit 70105585d1cf birjukumar/test-image:123.2
+docker images
+ docker push birjukumar/test-image
+
